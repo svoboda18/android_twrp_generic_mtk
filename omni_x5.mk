@@ -24,7 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-    device/doogee/x5/recovery.fstab:recovery/root/recovery.fstab
+    device/doogee/x5/generic.fstab:recovery/root/etc/generic.fstab \
+    device/doogee/x5/generic-o.fstab:recovery/root/etc/generic-o.fstab
 
 PRODUCT_DEVICE := x5
 PRODUCT_NAME := omni_x5
