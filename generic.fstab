@@ -3,7 +3,7 @@
 #
 
 /proinfo	emmc	/dev/block/platform/mtk-msdc.0/by-name/proinfo		flags=display="Proinfo";backup=1
-/nvram		emmc	/dev/block/platform/mtk-msdc.0/by-name/nvram		flags=display="IMEI";backup=1;subpartitionof=/nvdata
+/nvram		emmc	/dev/block/platform/mtk-msdc.0/by-name/nvram		flags=display="IMEI2";backup=1;subpartitionof=/nvdata
 /protect_f	ext4	/dev/block/platform/mtk-msdc.0/by-name/protect1		flags=display="Protect F";backup=1
 /protect_s	ext4	/dev/block/platform/mtk-msdc.0/by-name/protect2		flags=display="Protect S";backup=1
 /seccfg		emmc	/dev/block/platform/mtk-msdc.0/by-name/seccfg           flags=display="Secro Config";backup=1
@@ -26,4 +26,4 @@
 /cache		ext4	/dev/block/platform/mtk-msdc.0/by-name/cache
 /data		ext4	/dev/block/platform/mtk-msdc.0/by-name/userdata         flags=encryptable=/dev/block/platform/mtk-msdc.0/by-name/metadata
 /external_sd	vfat	/dev/block/mmcblk1p1	/dev/block/mmcblk1	        flags=display="External SDcard";storage;removable;backup=0
-/usbotg			vfat	/dev/block/sda1	/dev/block/sda	                flags=display="USB OTG";storage;removable;backup=0
+/usbotg		vfat	/dev/block/sda1	        /dev/block/sda	                flags=display="USB OTG";storage;removable;backup=0

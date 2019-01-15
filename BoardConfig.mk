@@ -23,10 +23,10 @@ TARGET_BOARD_PLATFORM := mt6580
 
 # Generic (by svoboda18)
 TARGET_USES_GENERIC_SUPPORT := true
-TARGET_GENERIC_BITS := 64
+TARGET_GENERIC_BITS := 32
 
 # Flipped Screen
-#BOARD_HAS_FLIPPED_SCREEN := false
+#BOARD_HAS_FLIPPED_SCREEN := true
 
 # Architecture (32Bit / 64bit)
 ifeq ($(TARGET_GENERIC_BITS),32)
